@@ -27,8 +27,8 @@ driver.find_element_by_class_name("header-secondary__btn--login").click()
 
 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "username")))
 time.sleep(1)
-driver.find_element_by_id("username").send_keys("hichamwakrim")
-driver.find_element_by_id("password").send_keys("lilWayne1982")
+driver.find_element_by_id("username").send_keys("")
+driver.find_element_by_id("password").send_keys("")
 driver.find_element_by_class_name("js-submit-button").click()
 
 pause.until(datetime.datetime(2020, 12, 17, 17, 55))
